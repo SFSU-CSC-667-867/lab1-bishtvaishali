@@ -14,13 +14,33 @@ const iAmAConstant = 9;
 // variables can also be objects
 const obj = {};
 
+
+
 // objects can dynamically add and remove properties
 obj.a = 9;
+
+
+
+
+
 
 // For Practice
 
 // declare an object with an object as a property
+const testvar = {
+    y: {
+        a: 'Hello',
+        b: 4,
+        c: 9
+    }
+};
+console.log(testvar);
 
 // delete a property
+delete testvar.y;
+testvar.a = 'p';
+console.log(testvar);
 
 // change a property
+testvar.a = 9;
+console.log(testvar);
